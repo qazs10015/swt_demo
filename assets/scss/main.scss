@@ -710,6 +710,19 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   font-family: 'Font Awesome 5 Free';
 }
 
+.list-style-six {
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      display: flex;
+      width: 150px;
+      justify-content: center;
+    }
+  }
+}
+
 /** Social Link Style One **/
 .social-style-one {
   display: inline-block;
@@ -1033,6 +1046,12 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 
 .home-six .bg-lighter {
   background-color: #f4f7fa;
+}
+
+.home-six .section-title {
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .home-six .section-title .sub-title {
@@ -7784,6 +7803,7 @@ h6,
 @media only screen and (max-width: 480px) {
   .hero-content-six h1 {
     font-size: 38px;
+    text-align: center;
   }
 }
 
@@ -9184,8 +9204,8 @@ h6,
   max-width: 400px;
   margin-bottom: 30px;
 
-   flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-item-six-container {
@@ -13277,6 +13297,7 @@ blockquote .author {
 
 .team-member-four:hover .image img {
   transform: scale(1.25);
+  transition: all 0.5s ease-in-out;
 }
 
 .team-member-four .image img {
@@ -15424,6 +15445,9 @@ div.sellers-active {
 
 .footer-logo {
   margin-top: -10px;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer-widget {
@@ -15432,6 +15456,9 @@ div.sellers-active {
 
 .footer-title {
   margin-bottom: 28px;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .newsletter-widget form {
