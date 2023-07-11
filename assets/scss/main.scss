@@ -687,6 +687,9 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   display: flex;
   margin-bottom: 10px;
   text-transform: capitalize;
+  a{
+    text-transform: none;
+  }
 }
 
 .list-style-two i {
