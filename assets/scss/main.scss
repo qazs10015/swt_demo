@@ -687,7 +687,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   display: flex;
   margin-bottom: 10px;
   text-transform: capitalize;
-  a{
+  a {
     text-transform: none;
   }
 }
@@ -8738,6 +8738,7 @@ h6,
   text-align: center;
   color: #2f97f7;
   border: 1px solid #2f97f7;
+  min-width:20px;
 }
 
 /* About Seven */
@@ -9192,7 +9193,9 @@ h6,
 /* Service Six */
 .service-item-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 30px;
 
   @media only screen and (max-width: 767px) {
     justify-content: space-between;
@@ -9204,26 +9207,18 @@ h6,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 400px;
   margin-bottom: 30px;
-
-  flex-direction: column;
-  align-items: center;
 }
 
 .service-item-six-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
+  width: 350px;
+  margin-right: 15px;
 }
 
 .service-item-six-content {
-  h5 {
-    text-align: center;
-  }
   width: 100%;
-  min-width: 300px;
+  margin-left: 10px;
 }
 
 .service-item-six .icon {
@@ -9243,10 +9238,6 @@ h6,
 
 .service-item-six .service-content h5 {
   margin-bottom: 15px;
-}
-
-.service-item-six:last-child {
-  margin-bottom: 0;
 }
 
 .service-item-six:last-child .icon {
@@ -13284,6 +13275,11 @@ blockquote .author {
   overflow: hidden;
   z-index: 1;
   position: relative;
+  width: auto;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-member-four .image::before {
@@ -13299,7 +13295,7 @@ blockquote .author {
 }
 
 .team-member-four:hover .image img {
-  transform: scale(1.25);
+  transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
 
@@ -15461,6 +15457,9 @@ div.sellers-active {
   margin-bottom: 28px;
   @media only screen and (max-width: 767px) {
     text-align: center;
+    div:first-child {
+      justify-content: center;
+    }
   }
 }
 
