@@ -1,8 +1,6 @@
 /*---------------------------------------------------------------------- Template Name: Restly - IT Solutions & Technology HTML Template Template URI: https://webtflex-end.net/demo/html/restly/ Author: WebTflex-end Author URI: https://webtflex-end.net/ Version: 1.0 Note: This is Main Style CSS File. */
 /*---------------------------------------------------------------------- CSS INDEX ---------------------- 01. Default Style 02. Common Classes 03. Repeat Style 04. Padding Margin 05. Custom Animation 06. Header style 07. Hero Section 08. Page Banner 09. About Section 10. Services 11. Fact Counter 12. Feature 13. Work Progress 14. Pricing 15. Gallery 16. News 17. Wedgets 18. Client Logo 19. Testimonials 20. Team Members 21. Subscribe 22. Call To Action 23. Contact 24. Shop Page 25. FAQs 26. 404 Error 27. Main Slider 28. Protects Section 29. Actions Section 30. Sellers Section 31. Main Footer */
 /* -------------------------------------------------------------- */
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Rubik:wght@400;500&display=swap');
 
 /*******************************************************/
 /******************* 01. Default Style *****************/
@@ -17,33 +15,33 @@
 }
 
 @font-face {
-  font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-Medium.woff2') format('woff2'), url('../fonts/CircularStd-Medium.woff') format('woff');
-  font-weight: 500;
+  font-family: 'NotoSansTC';
+  src: url('../fonts/NotoSansTC-Regular.otf') format('OpenType');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Nunito';
-  src: url('../fonts/Nunito-ExtraLight.woff2') format('woff2'), url('../fonts/Nunito-ExtraLight.woff') format('woff');
-  font-weight: 200;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('TrueType');
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  color: #454545;
-  background: white;
+  color: #fff;
   font-weight: 400;
   line-height: 28px;
   font-size: 16px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'NotoSansTC';
   overflow-x: hidden;
+  .engFont {
+    font-family: 'Roboto';
+  }
 }
 
 a {
-  color: #454545;
+  color: #fff;
   cursor: pointer;
   outline: none;
   -webkit-transition: 0.5s;
@@ -237,6 +235,12 @@ input[type='radio'] {
 
 .container {
   max-width: 1200px;
+  .bg-white {
+    background: #fff;
+  }
+  @media only screen and (max-width: 767px) {
+    background: #221243;
+  }
 }
 
 .small-gap {
@@ -681,6 +685,20 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   font-family: 'Font Awesome 5 Free';
 }
 
+.list-style-two.siteMap {
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list-style-two.mobile {
+  a,
+  li {
+    color: #333333;
+  }
+}
+
 .list-style-two li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,6 +708,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   a {
     text-transform: none;
   }
+  color: #fff;
 }
 
 .list-style-two i {
@@ -697,6 +716,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 }
 
 .list-style-three li {
+  color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,7 +736,6 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 .list-style-six {
   @media only screen and (max-width: 767px) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     li {
       display: flex;
@@ -975,28 +994,16 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 }
 
 /* Background Colors */
-.bg-blue {
-  background-color: #104cba;
+
+.bg-color {
+  background: linear-gradient(90deg, #221243 61.65%, rgba(30, 44, 135, 0) 102.03%, #221042 102.04%);
+  @media only screen and (max-width: 767px) {
+    background: #221243;
+  }
 }
 
-.bg-black {
-  background-color: #03091f !important;
-}
-
-.bg-red {
-  background-color: #f43336;
-}
-
-.bg-light-black {
-  background-color: #0e1e2a;
-}
-
-.bg-dark-blue {
-  background-color: #222f5a;
-}
-
-.bg-lighter {
-  background-color: #e5eef6;
+.bg-company-color {
+  background: linear-gradient(180deg, #3b38b9 61.65%, #221042 100%);
 }
 
 /* Border Radius */
@@ -1047,10 +1054,6 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   text-transform: uppercase;
 }
 
-.home-six .bg-lighter {
-  background-color: #f4f7fa;
-}
-
 .home-six .section-title {
   @media only screen and (max-width: 767px) {
     text-align: center;
@@ -1058,7 +1061,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 }
 
 .home-six .section-title .sub-title {
-  color: #2f97f7;
+  color: #3b38b9;
 }
 
 .home-six .section-title h2 {
@@ -1318,8 +1321,7 @@ h6,
 .success-item .count-text,
 .pricing-header .price {
   font-weight: 800;
-  color: #000000;
-  font-family: 'Nunito', sans-serif;
+  color: #fff;
 }
 
 .service-normal .icon i,
@@ -6038,6 +6040,7 @@ h6,
   z-index: 9;
   padding: 2px 0;
   position: relative;
+  width: 400px;
 }
 
 .main-header.fixed-header .header-upper {
@@ -6158,12 +6161,6 @@ h6,
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .main-menu .mobile-logo {
-    max-width: 150px;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   .main-menu .collapse {
     overflow: auto;
@@ -6245,11 +6242,12 @@ h6,
   font-size: 16px;
   opacity: 1;
   font-weight: 500;
-  color: #000000;
+  color: #fff;
   text-transform: capitalize;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+  height: 35px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -6262,7 +6260,7 @@ h6,
 .main-menu .navbar-collapse li a:hover,
 .main-menu .navbar-collapse li.current a,
 .main-menu .navbar-collapse li.current-menu-item a {
-  color: #000000;
+  color: #fff;
 }
 
 .main-menu .navbar-collapse li .btn-style-two {
@@ -6463,6 +6461,7 @@ h6,
 }
 
 .main-menu .navbar-header .navbar-toggle {
+  color: #fff;
   float: right;
   padding: 4px 0;
   cursor: pointer;
@@ -6470,7 +6469,7 @@ h6,
 }
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  background: #000000;
+  background: #fff;
   height: 2px;
   width: 30px;
   display: block;
@@ -6929,7 +6928,7 @@ h6,
 }
 
 .header-six.fixed-header .header-upper {
-  background: white;
+  background: #221243;
 }
 
 .header-six .main-menu {
@@ -7472,8 +7471,12 @@ h6,
   }
 }
 
+.navigation.onepage a:hover {
+  border-bottom: #ffde62 solid 5px;
+}
+
 .navigation.onepage a.is-active {
-  color: #0850b0;
+  color: #fff;
 }
 
 .navigation.onepage.two a.is-active {
@@ -7747,14 +7750,22 @@ h6,
 }
 
 /* Hero Six */
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 768px) {
   .hero-section-six {
     padding-top: 180px;
     padding-bottom: 100px;
+    background: url('../images/background/introduction.png') no-repeat right #221243;
+    background-size: 1200px auto;
+  }
+  .hero-six-images {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  .hero-six-images {
+    position: relative;
+  }
   .hero-section-six {
     padding-bottom: 65px;
   }
@@ -7766,10 +7777,17 @@ h6,
   }
 }
 
+.hero-content-six {
+  color: #fff;
+}
+
 .hero-content-six .sub-title {
   font-size: 18px;
   text-transform: uppercase;
-  color: #2f97f7;
+  color: #fff;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .hero-content-six p {
@@ -7778,6 +7796,7 @@ h6,
 }
 
 .hero-content-six h1 {
+  color: #ffde62;
   text-transform: capitalize;
 }
 
@@ -7825,11 +7844,6 @@ h6,
   background: #2f97f7;
 }
 
-.hero-six-images {
-  padding-left: 5%;
-  position: relative;
-}
-
 @media only screen and (min-width: 1501px) {
   .hero-six-images {
     margin-right: -175px;
@@ -7844,7 +7858,7 @@ h6,
 }
 
 .hero-six-images img:nth-child(1) {
-  width: 96%;
+  width: 100%;
   -webkit-animation: bounce 15s infinite linear;
   animation: bounce 15s infinite linear;
 }
@@ -8736,9 +8750,9 @@ h6,
   line-height: 20px;
   border-radius: 50%;
   text-align: center;
-  color: #2f97f7;
-  border: 1px solid #2f97f7;
-  min-width:20px;
+  color: #3b38b9;
+  border: 1px solid #3b38b9;
+  min-width: 20px;
 }
 
 /* About Seven */
@@ -9192,6 +9206,9 @@ h6,
 
 /* Service Six */
 .service-item-container {
+  h5 {
+    color: #333333;
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9241,8 +9258,8 @@ h6,
 }
 
 .service-item-six:last-child .icon {
-  color: #9e59ff;
-  background: #9e59ff1f;
+  color: #ffc900;
+  background-color: rgba(#ffde62, 0.15);
 }
 
 /* Service Seven */
@@ -13269,6 +13286,7 @@ blockquote .author {
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.07);
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .team-member-four .image {
@@ -15451,6 +15469,22 @@ div.sellers-active {
 
 .footer-widget {
   margin-bottom: 50px;
+  &.introduction {
+    display: block;
+  }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    h5 {
+      margin-right: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    display: block;
+    h5 {
+      margin-right: 0;
+    }
+  }
 }
 
 .footer-title {
@@ -15713,6 +15747,10 @@ div.sellers-active {
   opacity: 0.75;
 }
 
+.main-footer {
+  background: #221243;
+}
+
 .main-footer .list-style-three li:before {
   color: white;
   font-size: 14px;
@@ -15826,20 +15864,31 @@ div.sellers-active {
 }
 
 /* Footer Five */
+.footer-five.mobile a {
+  color: #333333;
+}
 .footer-five .copyright-inner {
   border-top: 1px solid #ced0d4;
 }
 
 .footer-five .copyright-inner p {
   opacity: 1;
-  color: #0a1426;
+  color: #fff;
   font-size: 16px;
   padding: 10px 0;
 }
 
-.footer-five .list-style-two i {
-  font-size: 18px;
-  color: #2f97f7;
+.footer-five .list-style-two {
+  &.mobile {
+    color: #3b38b9;
+    i {
+      color: #3b38b9;
+    }
+  }
+  i {
+    font-size: 18px;
+    color: #fff;
+  }
 }
 
 .footer-five .social-style-two a {
