@@ -2,6 +2,9 @@
 /*---------------------------------------------------------------------- CSS INDEX ---------------------- 01. Default Style 02. Common Classes 03. Repeat Style 04. Padding Margin 05. Custom Animation 06. Header style 07. Hero Section 08. Page Banner 09. About Section 10. Services 11. Fact Counter 12. Feature 13. Work Progress 14. Pricing 15. Gallery 16. News 17. Wedgets 18. Client Logo 19. Testimonials 20. Team Members 21. Subscribe 22. Call To Action 23. Contact 24. Shop Page 25. FAQs 26. 404 Error 27. Main Slider 28. Protects Section 29. Actions Section 30. Sellers Section 31. Main Footer */
 /* -------------------------------------------------------------- */
 
+$black: #333333;
+$white: #fff;
+
 /*******************************************************/
 /******************* 01. Default Style *****************/
 /*******************************************************/
@@ -29,7 +32,7 @@
 }
 
 body {
-  color: #fff;
+  color: $white;
   font-weight: 400;
   line-height: 28px;
   font-size: 16px;
@@ -41,7 +44,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: $white;
   cursor: pointer;
   outline: none;
   -webkit-transition: 0.5s;
@@ -154,7 +157,7 @@ textarea,
   height: auto;
   padding: 16px 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: $white;
   border: 2px solid #cfdbf1;
 }
 
@@ -212,7 +215,7 @@ input[type='radio'] {
 .text-white select,
 .text-white textarea,
 .text-white .form-control {
-  color: #ffffff50;
+  color: $white;
   border-color: #273540;
   background: #0e1e2a;
 }
@@ -230,13 +233,20 @@ input[type='radio'] {
   width: 100%;
   margin: 0 auto;
   min-width: 300px;
-  background: #ffffff;
+  background: $white;
 }
 
 .container {
   max-width: 1200px;
   .bg-white {
-    background: #fff;
+    background: $white;
+  }
+
+  @media only screen and (max-width: 1439px) {
+    padding: 0 24px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 0 16px;
   }
 }
 
@@ -269,7 +279,7 @@ input[type='radio'] {
 
 @media only screen and (max-width: 480px) {
   .section-title h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -692,20 +702,19 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 .list-style-two.mobile {
   a,
   li {
-    color: #333333;
+    color: $black;
   }
 }
 
 .list-style-two li {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   margin-bottom: 10px;
   text-transform: capitalize;
   a {
     text-transform: none;
   }
-  color: #fff;
+  color: $white;
 }
 
 .list-style-two i {
@@ -713,7 +722,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 }
 
 .list-style-three li {
-  color: #333333;
+  color: $black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,7 +802,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #ffffff;
+  background: $white;
   z-index: 9999999;
 }
 
@@ -994,7 +1003,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 
 .bg-color {
   background: linear-gradient(90deg, #221243 61.65%, rgba(30, 44, 135, 0) 102.03%, #221042 102.04%);
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1439px) {
     background: #221243;
   }
 }
@@ -1318,7 +1327,7 @@ h6,
 .success-item .count-text,
 .pricing-header .price {
   font-weight: 800;
-  color: #fff;
+  color: $white;
 }
 
 .service-normal .icon i,
@@ -6182,7 +6191,7 @@ h6,
     width: 100%;
     padding: 0 15px;
     position: absolute;
-    background: #ffffff;
+    background: $white;
     border-bottom: 1px solid #e0e0e0;
   }
 }
@@ -6239,7 +6248,7 @@ h6,
   font-size: 16px;
   opacity: 1;
   font-weight: 500;
-  color: #fff;
+  color: $white;
   text-transform: capitalize;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -6257,7 +6266,7 @@ h6,
 .main-menu .navbar-collapse li a:hover,
 .main-menu .navbar-collapse li.current a,
 .main-menu .navbar-collapse li.current-menu-item a {
-  color: #fff;
+  color: $white;
 }
 
 .main-menu .navbar-collapse li .btn-style-two {
@@ -6295,7 +6304,7 @@ h6,
   width: 100%;
   z-index: 100;
   padding: 20px 0;
-  background: #ffffff;
+  background: $white;
   -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
   opacity: 0;
@@ -6368,7 +6377,7 @@ h6,
   top: 100%;
   min-width: 220px;
   z-index: 100;
-  background: #ffffff;
+  background: $white;
   -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
   opacity: 0;
@@ -6458,7 +6467,7 @@ h6,
 }
 
 .main-menu .navbar-header .navbar-toggle {
-  color: #fff;
+  color: $white;
   float: right;
   padding: 4px 0;
   cursor: pointer;
@@ -6466,7 +6475,7 @@ h6,
 }
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  background: #fff;
+  background: $white;
   height: 2px;
   width: 30px;
   display: block;
@@ -6544,7 +6553,7 @@ h6,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: $white;
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
 }
@@ -7473,7 +7482,7 @@ h6,
 }
 
 .navigation.onepage a.is-active {
-  color: #fff;
+  color: $white;
 }
 
 .navigation.onepage.two a.is-active {
@@ -7766,22 +7775,19 @@ h6,
   .hero-section-six {
     padding-bottom: 65px;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .hero-content-six {
     padding-bottom: 35px;
   }
 }
 
 .hero-content-six {
-  color: #fff;
+  color: $white;
 }
 
 .hero-content-six .sub-title {
   font-size: 18px;
   text-transform: uppercase;
-  color: #fff;
+  color: $white;
   @media only screen and (max-width: 767px) {
     text-align: center;
   }
@@ -8628,30 +8634,36 @@ h6,
 }
 
 /* About Six */
-.about-content-six .list-style-one li {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-@media only screen and (max-width: 767px) {
-  .about-content-six .list-style-one li {
-    font-size: 16px;
+.about-six-content {
+  h2 {
+    color: $black;
   }
 }
 
-.about-content-six .list-style-one li:before {
-  width: 25px;
-  height: 25px;
-  margin-top: 0;
-  font-size: 14px;
-  line-height: 25px;
-}
+// .about-content-six .list-style-one li {
+//   font-size: 18px;
+//   font-weight: 400;
+// }
 
-.about-shape-six {
-  z-index: 1;
-  max-width: 520px;
-  position: relative;
-}
+// @media only screen and (max-width: 767px) {
+//   .about-content-six .list-style-one li {
+//     font-size: 16px;
+//   }
+// }
+
+// .about-content-six .list-style-one li:before {
+//   width: 25px;
+//   height: 25px;
+//   margin-top: 0;
+//   font-size: 14px;
+//   line-height: 25px;
+// }
+
+// .about-shape-six {
+//   z-index: 1;
+//   max-width: 520px;
+//   position: relative;
+// }
 
 @media only screen and (max-width: 767px) {
   .about-shape-six {
@@ -8713,6 +8725,12 @@ h6,
   -webkit-animation: jello 20s linear infinite;
   animation: jello 20s linear infinite;
   border-radius: 10% 40% 40% 60% / 40% 60% 35% 65%;
+}
+
+.customization-content {
+  h2 {
+    color: $black;
+  }
 }
 
 .customization-content .list-style-three {
@@ -9204,7 +9222,7 @@ h6,
 /* Service Six */
 .service-item-container {
   h5 {
-    color: #333333;
+    color: $black;
   }
   display: flex;
   flex-wrap: wrap;
@@ -9311,7 +9329,7 @@ h6,
 .service-item-seven {
   padding: 50px;
   margin-bottom: 30px;
-  background: #ffffff;
+  background: $white;
   -webkit-box-shadow: 0px 20px 70px rgba(0, 15, 92, 0.07);
   box-shadow: 0px 20px 70px rgba(0, 15, 92, 0.07);
 }
@@ -10757,7 +10775,7 @@ h6,
 
 .pricing-item-seven {
   padding: 50px;
-  background: #ffffff;
+  background: $white;
   border-radius: 10px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 10px 70px rgba(0, 0, 0, 0.05);
@@ -13315,7 +13333,10 @@ blockquote .author {
 }
 
 .team-member-four .image img {
-  width: 100%;
+  width: 90%;
+  @media only screen and (max-width: 1439px) {
+    width: 80%;
+  }
 }
 
 .team-member-four .image:before {
@@ -15466,20 +15487,37 @@ div.sellers-active {
 
 .footer-widget {
   margin-bottom: 50px;
-  &.introduction {
-    display: block;
+  display: flex;
+
+  &.link-widget,
+  &.contact-widget {
+    justify-content: center;
   }
-  @media only screen and (min-width: 768px) {
-    display: flex;
-    h5 {
-      margin-right: 25px;
+
+  &.introduction {
+    flex-direction: column;
+  }
+  h5 {
+    margin-right: 25px;
+  }
+
+  @media only screen and (max-width: 1439px) {
+    &.introduction {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 
   @media only screen and (max-width: 767px) {
-    display: block;
-    h5 {
-      margin-right: 0;
+    &.introduction {
+      flex-direction: column;
+    }
+
+    &.link-widget,
+    &.contact-widget {
+      flex-direction: column;
+      justify-content: start;
     }
   }
 }
@@ -15862,7 +15900,7 @@ div.sellers-active {
 
 /* Footer Five */
 .footer-five.mobile a {
-  color: #333333;
+  color: $black;
 }
 .footer-five .copyright-inner {
   border-top: 1px solid #ced0d4;
@@ -15870,7 +15908,7 @@ div.sellers-active {
 
 .footer-five .copyright-inner p {
   opacity: 1;
-  color: #fff;
+  color: $white;
   font-size: 16px;
   padding: 10px 0;
 }
@@ -15884,7 +15922,7 @@ div.sellers-active {
   }
   i {
     font-size: 18px;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -16504,7 +16542,7 @@ div.sellers-active {
 .offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;
-  background: #fff;
+  background: $white;
   z-index: 9999;
   top: 0;
   height: 100%;
@@ -16644,7 +16682,7 @@ div.sellers-active {
   border: 1px solid #2b70fa;
   border-radius: 10px;
   background: #2b70fa;
-  color: #fff;
+  color: $white;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -16655,7 +16693,7 @@ div.sellers-active {
 .canvas_close a:hover {
   background: #2b70fa;
   border-color: #2b70fa;
-  color: #fff;
+  color: $white;
 }
 
 .canvas_open a {
@@ -16708,7 +16746,7 @@ div.sellers-active {
 .offcanvas-social ul li a:hover {
   background: #2b70fa;
   border-color: #2b70fa;
-  color: #fff;
+  color: $white;
 }
 
 .offcanvas_main_menu li ul.sub-menu {
@@ -16738,7 +16776,7 @@ div.sellers-active {
 
 .cart-area {
   .table-content table {
-    background: #ffffff;
+    background: $white;
     border-color: #eaedff;
     border-radius: 0;
     border-style: solid;
@@ -17043,7 +17081,7 @@ p.checkout-coupon input[type='submit']:hover {
 .coupon-info p.form-row input[type='submit'] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
-  color: #fff;
+  color: $white;
   display: inline-block;
   float: left;
   font-size: 12px;
@@ -17141,7 +17179,7 @@ p.checkout-coupon input[type='text'] {
 .checkout-form-list input[type='text'],
 .checkout-form-list input[type='password'],
 .checkout-form-list input[type='email'] {
-  background: #ffffff;
+  background: $white;
   border: 1px solid #eaedff;
   border-radius: 0;
   height: 45px;
@@ -17309,7 +17347,7 @@ p.checkout-coupon input[type='text'] {
   }
 
   & .accordion-item {
-    background-color: #fff;
+    background-color: $white;
     border: 0;
     border-bottom: 1px solid #f0f0f5;
   }
@@ -17366,7 +17404,7 @@ p.checkout-coupon input[type='text'] {
 .order-button-payment input {
   background: #232323 none repeat scroll 0 0;
   border: medium none;
-  color: #fff;
+  color: $white;
   font-size: 15px;
   font-weight: 600;
   height: 40px;
@@ -17404,7 +17442,7 @@ p.checkout-coupon input[type='text'] {
 }
 
 .payment-method .card {
-  background-color: #ffffff;
+  background-color: $white;
   border: 1px solid #eaedff;
   border-radius: 0;
   margin-bottom: 10px;
@@ -17419,7 +17457,7 @@ p.checkout-coupon input[type='text'] {
 }
 
 .payment-method .card-header {
-  background-color: #ffffff;
+  background-color: $white;
   border-bottom: 1px solid #eaedff;
 }
 
