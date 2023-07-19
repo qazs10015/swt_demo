@@ -38,6 +38,7 @@ body {
   font-size: 16px;
   font-family: 'NotoSansTC';
   overflow-x: hidden;
+
   .engFont {
     font-family: 'Roboto';
   }
@@ -239,6 +240,7 @@ input[type='radio'] {
 .container {
   margin-top: -1px;
   max-width: 1200px;
+
   .bg-white {
     background: $white;
   }
@@ -247,6 +249,7 @@ input[type='radio'] {
     padding: 0 24px;
     margin-top: -1px;
   }
+
   @media only screen and (max-width: 767px) {
     padding: 0 16px;
   }
@@ -713,9 +716,11 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   display: -ms-flexbox;
   margin-bottom: 10px;
   text-transform: capitalize;
+
   a {
     text-transform: none;
   }
+
   color: $white;
 }
 
@@ -745,6 +750,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   @media only screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
+
     li {
       display: flex;
       width: 150px;
@@ -1005,6 +1011,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 
 .bg-color {
   background: linear-gradient(90deg, #221243 22.65%, rgba(30, 44, 135, 0) 102.03%, #221042 102.04%);
+
   @media only screen and (max-width: 767px) {
     background: #221243;
   }
@@ -7761,6 +7768,11 @@ h6,
 .hero-section-six {
   background: url('../images/background/introduction.png') no-repeat right #221243;
   background-size: 1200px auto;
+
+  @media only screen and (min-width: 2000px) {
+    background-position-x:40vw;
+  }
+
   @media only screen and (max-width: 1439px) {
     padding-bottom: 25px;
     background-size: 680px auto;
@@ -7789,6 +7801,7 @@ h6,
   font-size: 18px;
   text-transform: uppercase;
   color: $white;
+
   @media only screen and (max-width: 767px) {
     text-align: center;
     padding-bottom: 35px;
@@ -8345,12 +8358,6 @@ h6,
   bottom: 0;
   z-index: -1;
   position: absolute;
-  background: url(../images/about/about-bg-shape.png) no-repeat bottom;
-}
-
-.about-section.style-four:after,
-.about-section.style-five:after {
-  background: url(../images/about/about-four-bg-shape.png) no-repeat bottom;
 }
 
 .about-section .fact-counter-inner {
@@ -8485,7 +8492,6 @@ h6,
   position: absolute;
   width: 130px;
   height: 100px;
-  background: url(../images/about/about-bg-dots.png) no-repeat;
 }
 
 .about-two-image img,
@@ -8707,12 +8713,15 @@ h6,
   .customization-content-ipad {
     display: none;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1439px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .customization-content-ipad {
       display: block;
+
       h2 {
         color: $black;
       }
@@ -8742,6 +8751,7 @@ h6,
   h2 {
     color: $black;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1439px) {
     .section-title {
       display: none;
@@ -8925,11 +8935,6 @@ h6,
   z-index: -1;
 }
 
-.feature-about-bg:before {
-  opacity: 0.05;
-  background: url(../images/about/about-eight-bg.png) no-repeat center/cover;
-}
-
 .feature-about-bg:after {
   opacity: 0.4;
   background: #f7f7f7;
@@ -9063,7 +9068,6 @@ h6,
   bottom: 0;
   z-index: -1;
   position: absolute;
-  background: url(../images/about/about-bg-shape.png) no-repeat bottom;
 }
 
 @media only screen and (max-width: 991px) {
@@ -9240,6 +9244,7 @@ h6,
   h5 {
     color: $black;
   }
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13349,6 +13354,7 @@ blockquote .author {
 
 .team-member-four .image img {
   width: 90%;
+
   @media only screen and (max-width: 1439px) {
     width: 80%;
   }
@@ -15495,6 +15501,7 @@ div.sellers-active {
 
 .footer-logo {
   margin-top: -10px;
+
   @media only screen and (max-width: 767px) {
     text-align: center;
   }
@@ -15512,6 +15519,7 @@ div.sellers-active {
   &.introduction {
     flex-direction: column;
   }
+
   h5 {
     margin-right: 25px;
   }
@@ -15539,8 +15547,10 @@ div.sellers-active {
 
 .footer-title {
   margin-bottom: 28px;
+
   @media only screen and (max-width: 767px) {
     text-align: center;
+
     div:first-child {
       justify-content: center;
     }
@@ -15917,6 +15927,7 @@ div.sellers-active {
 .footer-five.mobile a {
   color: $black;
 }
+
 .footer-five .copyright-inner {
   border-top: 1px solid #ced0d4;
 }
@@ -15931,10 +15942,12 @@ div.sellers-active {
 .footer-five .list-style-two {
   &.mobile {
     color: #3b38b9;
+
     i {
       color: #3b38b9;
     }
   }
+
   i {
     font-size: 18px;
     color: $white;
